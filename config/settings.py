@@ -1,4 +1,11 @@
 from pathlib import Path
+import environ
+
+env = environ.Env(
+    DEBUG=(bool, False)
+)
+
+environ.Env.read_env()
 
 # GENERAL
 # ------------------------------------------------------------------------------
@@ -33,6 +40,7 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
+    'games'
 ]
 
 # MIDDLEWARE
