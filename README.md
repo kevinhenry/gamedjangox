@@ -32,6 +32,7 @@ Some of those common tasks are…
 [x] Create a Django app of your choosing.
 [x] The specific functionality of the site is up to you but should have a model that makes use of `get_user_model`
 
+
 ## Implementation Notes
 
 DjangoX does not use poetry out of the box. So you’ll need to look at the files DjangoX does use to see which dependencies are used.
