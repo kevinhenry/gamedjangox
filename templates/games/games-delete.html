@@ -2,12 +2,12 @@
 
 {% block content %}
 
-<h1>Delete Games</h1>
+<h1>Delete Game</h1>
 
 <form action="" method="POST">
     {% csrf_token %}
-    {{ form.as_p }}
-    <p>Do you really want to DELETE "{{ game.title }}"?</p>
+    <!-- {{ form.as_p }} -->
+    <p>Do you really want to DELETE "{{ games.name }}"?</p>
     <input type="submit" value="OK">
 </form>
 

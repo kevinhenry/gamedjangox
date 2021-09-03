@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
-    'games'
+    'games',
 ]
 
 # MIDDLEWARE

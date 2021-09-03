@@ -7,29 +7,29 @@ from django.urls import reverse_lazy
 from .models import Games
 
 
-class GameListView(ListView):
-    template_name = "game/game-list.html"
+class GamesListView(ListView):
+    template_name = "games/games-list.html"
     model = Games
 
 
-class GameDetailView(DetailView):
-    template_name = "game/game-detail.html"
+class GamesDetailView(DetailView):
+    template_name = "games/games-detail.html"
     model = Games
 
 
-class GameCreateView(CreateView):
-    template_name = "game/game-create.html"
+class GamesCreateView(CreateView):
+    template_name = "games/games-create.html"
     model = Games
-    fields = []
+    fields = ['name', 'description', 'owner']
 
 
-class GameUpdateView(UpdateView):
-    template_name = "game/game-update.html"
+class GamesUpdateView(UpdateView):
+    template_name = "games/games-update.html"
     model = Games
-    fields = []
+    fields = ['name', 'description', 'owner']
 
 
-class GameDeleteView(DeleteView):
-    template_name = "game/game-delete.html"
+class GamesDeleteView(DeleteView):
+    template_name = "games/games-delete.html"
     model = Games
-    success_url = reverse_lazy("game-list")
+    success_url = reverse_lazy("games_list")
