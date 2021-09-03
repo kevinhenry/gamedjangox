@@ -7,6 +7,7 @@ PR: [Link](https://github.com/kevinhenry/gamedjangox/pulls)
 Collaboration:
   Tony Regalado, Anthony Williams
 
+
 ## Overview
 
 It is quite common to set up your Django projects the same way every time.
